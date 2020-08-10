@@ -1,0 +1,170 @@
+
+
+
+
+
+
+
+
+
+
+    <mat-grid-list cols="1" rowHeight="500" style="width: 1000px">
+
+
+        <div fxLayoutAlign="start">
+            {{formGroup.value | json}}
+                 </div>
+
+    
+        <mat-grid-tile > 
+                <form [formGroup]="formGroup" >
+                    
+            <div fxLayout="column" style="margin-top: 10%">
+             
+
+
+
+
+            <div fxLayout="row" fxLayoutGap="10%"  style="margin-left: -5%">
+                <div >
+                    <mat-form-field appearance="outline" class="form-group">
+                           
+                            <input formControlName="name" matInput placeholder="name*" class="form-control" >
+                            <mat-error>{{fieldRequired}}</mat-error>
+                           
+                            
+                
+                        </mat-form-field>
+                        <br>
+
+                        <mat-form-field appearance="outline"  class="form-group">
+                                <input  formControlName="description" matInput placeholder="description*" class="form-control"  >
+                                <mat-error>{{fieldRequired}}</mat-error>
+                            </mat-form-field>
+                            <br>
+                            <mat-form-field appearance="outline"  class="form-group">
+                                    <input  formControlName="email" matInput placeholder="email*" class="form-control" >
+                                    <mat-error *ngIf="formGroup.controls['email'].errors?.required">this field is required</mat-error>
+                                    <mat-error *ngIf="formGroup.controls['email'].errors?.email">invalid email</mat-error>
+                                </mat-form-field>
+                                <br>
+                                <mat-form-field appearance="outline"  class="form-group">
+                                        <input formControlName="phone" matInput placeholder="phone*" class="form-control" >
+                                        <mat-error *ngIf="formGroup.controls['phone'].errors?.required">this field is required</mat-error>
+                                        <mat-error *ngIf="formGroup.controls['phone'].errors?.minlength">Minimum 10  charactors needed</mat-error>
+     
+                                    </mat-form-field>
+                    </div>
+
+                    <div>
+
+
+
+                        <mat-form-field appearance="outline"  class="form-group">
+                                <input formControlName="province" matInput placeholder="Province*" class="form-control" >  
+                        <mat-error>{{fieldRequired}}</mat-error>
+                            </mat-form-field> 
+<br>
+                            <mat-form-field appearance="outline">
+                                    <input formControlName="district" matInput placeholder="district*" class="form-control" >  
+                                    <mat-error>{{fieldRequired}}</mat-error>
+                                </mat-form-field> 
+                                <br>
+                                <mat-form-field appearance="outline"  class="form-group">
+                                        <input formControlName="sector" matInput placeholder="sector*" class="form-control" > 
+                                        <mat-error>{{fieldRequired}}</mat-error>
+                                    </mat-form-field> 
+                        <mat-form-field appearance="outline"  class="form-group">
+                             
+                    <input formControlName="website" matInput placeholder="Website*" class="form-control" >  
+                    <mat-error>{{fieldRequired}}</mat-error>
+                           
+                    </mat-form-field>
+                       
+                    </div>
+                    <div>
+
+
+                    <!--  <mat-form-field appearance="outline"  class="form-group">
+                                <input formControlName="key_person" matInput placeholder="key_person*" class="form-control" >
+                                <mat-error>{{fieldRequired}}</mat-error>
+                            </mat-form-field> -->
+                          
+                      
+                            <br>
+                            <mat-form-field appearance="outline">
+                                    <input formControlName=" more_info " matInput placeholder="more_info* " class="form-control" >  
+                                    <mat-error>{{fieldRequired}}</mat-error>
+                                </mat-form-field> 
+                                <br>
+                                       <div class="form-group">
+                                            <input formControlName="log" type="file" (change)="onFileSelected($event)"  placeholder="upload file*"  class="form-control">
+                                       </div>
+                                      
+                                    
+                              
+                                <br>
+                                
+
+
+
+             <!-- <mat-form-field appearance="outline"  class="form-group">
+                                    <input   formControlName="created_at"matInput [matDatepicker]="dp" placeholder=" created_at*">
+                                    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                                    <mat-datepicker #dp></mat-datepicker>
+                                  </mat-form-field> 
+                                   <mat-form-field appearance="outline"  class="form-group">
+                                    <input formControlName="created_at" matInput [matDatepicker]="dp" placeholder=" created_at*">
+                                    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                                    <mat-datepicker #dp></mat-datepicker>
+                                  </mat-form-field>
+                                  -->    
+                                  
+                                 
+                                  
+                                  
+                                  
+                                   
+                                  
+                                 <br>
+                                 <mat-form-field appearance="outline"  class="form-group">
+                                        <mat-label>ownershipstatus</mat-label>
+                                        <mat-select formControlName="ownershipstatus"   class="form-control" >
+                                                <mat-option value="None">None</mat-option >
+                                                <mat-option value="PUBLIC">PUBLIC</mat-option >
+                                                <mat-option value="PRIVATE">PRIVATE</mat-option >
+                                             
+                                        </mat-select>
+                                      </mat-form-field>
+                                      
+                                      
+                                       
+                                  
+
+
+                    </div>
+
+        </div>
+
+        <div fxLayoutAlign="center">
+        <button   mat-raised-button color="primary" style="width: 200px;font-size: 20px"  [disabled]="formGroup.invalid" (click)="saveProduct(formGroup.value)">Save</button>
+            
+                 </div>
+               
+                
+            </div>
+            <br>
+            
+               
+
+           
+           
+           
+   
+        </form>
+      
+
+        </mat-grid-tile>
+    
+      </mat-grid-list>
+

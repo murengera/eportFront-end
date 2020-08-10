@@ -1,0 +1,108 @@
+
+  
+
+ <div class="card" fxFlex fxLayout="column"  fxLayout.xs="column"  fxLayoutAlign=" center" fxLayoutAlign.xs=" center" >
+        <mat-card style="width: 400px;height: 500px;margin-top:40px" >
+                
+               
+                <mat-card-content class="content" fxLayout="column" fxLayout.xs="column" fxFlex="80%" fxFlexOffset="12%" [formGroup]="registrationForm">
+
+                    <div>
+                        <mat-card-header>
+                
+                            <mat-card-title   id="register"> New Account</mat-card-title>
+                       
+                          
+                          </mat-card-header>
+                    </div>
+                    
+
+                    <div class="form-group" >
+
+                        <mat-form-field floatLabel="auto"   fxFlex fxFlex.xs="100%"  appearance="outline" color="primary">
+
+                            <mat-label >  <mat-icon style="font-size: 20px;color:#22314f">account_circle</mat-icon>Name</mat-label>
+                                <input    matInput required class="form-control">
+                               
+                                <mat-error>{{fieldRequired}}</mat-error>
+                            </mat-form-field>
+                           
+                    </div>
+                       
+
+
+                <div class="form-group">
+                    <mat-form-field fxFlex   fxFlex.xs="100%"  floatLabel="never"   appearance="outline">
+                    
+                        <mat-label><i  style="font-size: 15px;color: #22314f" class="fa fa-envelope"></i>Email</mat-label>
+                            <input color="warn"  formControlName="email"   class="form-control"matInput required type="email">
+                           
+                </mat-form-field>
+                </div>    
+                    
+    <div>
+
+            
+        <mat-form-field  fxFlex  fxFlex.xs="100%"  appearance="outline">
+            <mat-label>categories</mat-label>
+        <mat-select>
+              
+          <mat-option value="none">None</mat-option>
+            <mat-option value="parent"> Parent</mat-option>
+            <mat-option value="applicant">Applicant</mat-option>
+            <mat-option value="staff">Staff</mat-option>
+        </mat-select>
+        
+    </mat-form-field>
+    </div>            
+                            
+                    
+
+    <div class="form-group">
+
+        <mat-form-field fxFlex   fxFlex.xs="100%"  floatLabel="never"   appearance="outline">
+                    
+            <mat-label><i style="font-size: 15px;color: #22314f" class="fa fa-lock" ></i> Password</mat-label>
+                <input   matInput required  formControlName="password"   type="email" type="Password" class="form-control">
+               
+    </mat-form-field>
+    </div>
+
+
+    <div class="form-group">
+        <mat-form-field fxFlex   fxFlex.xs="100%" floatLabel="never"   appearance="outline">
+                    
+            <mat-label> <i style="font-size: 15px;color: #22314f" class="fa fa-lock" ></i>Confirm Password</mat-label>
+                <input   matInput required type="password" formControlName="confirmPassword"  class="form-control">
+               
+     </mat-form-field>
+    </div>
+                           
+                           
+
+
+    <div   fxFlexOffset="-9%" fxFlexOffset.xs="-9%" style="margin-left: 50px">
+
+
+        <mat-card-actions>
+            <span> <button mat-raised-button disableRipple style="background-color: #22314f;color: white;right: -60px;" fxLayoutAlign=" center">Register</button>
+               
+            </span>
+           
+           
+          </mat-card-actions>
+
+        
+    </div>
+             
+    
+    <div  fxFlexOffset="-10%" fxFlexOffset.xs="-7%" style="text-align: center">
+        <mat-list-item routerLink="/login"  style="color:#22314f;margin-right:2000px"> Already Have an Account? </mat-list-item>
+    </div>
+
+
+                </mat-card-content>
+
+              
+              </mat-card> 
+ </div>

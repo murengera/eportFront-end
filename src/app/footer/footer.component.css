@@ -1,0 +1,73 @@
+#search{
+    padding-right: 54px;
+    margin-top: -37px;
+    border-radius: 50px;
+    height: 44px;
+    width: 215px;
+    background-color: #ffffff;
+    color: white;
+
+}
+#search:hover{
+    color: white;
+    box-shadow: 1px 2px 5px 1px black;
+
+   
+
+}
+.subscribe{
+    margin-left: 422px;
+    margin-top: -83px;
+}
+
+#mat-tool{
+    height: 200px;
+    background: rgba(178, 178, 178, 1);
+   /* background-image: url("../../assets/background/horizon.jpg");*/
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+#button{
+  
+  
+    background-color: rgb(3, 54, 64);
+    width: 119px;
+    border: 1px solid rgb(3, 54, 64);
+    height: 46px;
+    padding-left: 6px;
+    margin-left: -45px;
+    border-radius: 32px;
+    color: #b2b2b2;
+   
+  
+  
+}
+#button:hover{
+  
+    cursor: pointer;
+    background-color: #22314f;
+    box-shadow: -1px 2px 7px 2px black;
+    color: #95a1a8;
+   
+   
+   
+
+}
+.links:hover{
+    cursor: pointer;
+    color: red;
+    opacity: 0.4;
+}
+
+
+.mobile:hover{
+cursor: pointer;
+}
+
+.sub{
+    margin-right: 754px;
+}
+.newletter{
+    margin-right: 799px;
+}

@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+
+
+    <mat-grid-list cols="1" rowHeight="370" style="width: 500px">
+
+
+        <div fxLayoutAlign="start">
+            {{formGroup.value | json}}
+                 </div>
+
+
+
+    
+        <mat-grid-tile > 
+                <form [formGroup]="formGroup" >
+                    
+            <div fxLayout="column" style="margin-top: 10%">
+             
+
+
+
+
+            <div fxLayout="row" fxLayoutGap="10%"  style="margin-left: -5%">
+                
+                    
+                   
+
+                        <div>
+                        <br>
+                        <mat-form-field appearance="outline" class="form-group">
+                           
+                            <input formControlName="program" matInput placeholder="program*" class="form-control" >
+                            <mat-error>{{fieldRequired}}</mat-error>
+                           
+                            
+                
+                        </mat-form-field>
+                        <button mat-button disabled>Disabled</button>
+                        <br>
+
+                   
+                            <mat-form-field appearance="outline"  class="form-group">
+                                <input   formControlName="duration" matInput placeholder="duration*" class="form-control" >
+                                <mat-error>{{fieldRequired}}</mat-error>
+                            </mat-form-field>
+                                <br>
+                              
+                    </div>
+                   
+                                       
+                                  
+
+
+
+        </div>
+
+        <div fxLayoutAlign="center">
+        <button   mat-raised-button color="primary" style="width: 200px;font-size: 20px"  [disabled]="formGroup.invalid" (click)="saveProduct(formGroup.value)">Save</button>
+            
+                 </div>
+               
+                
+            </div>
+            <br>
+            
+               
+
+           
+           
+           
+   
+        </form>
+      
+
+        </mat-grid-tile>
+    
+      </mat-grid-list>
+

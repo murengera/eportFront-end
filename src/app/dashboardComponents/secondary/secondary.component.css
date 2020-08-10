@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+  
+  table {
+    width: 100%;
+  
+  }
+  #buttoncreate{
+    margin-top: 26px;
+   background-color: white;
+   color: blue;
+   border: 1px solid blue;
+   width: 80px;
+   margin-left: 107px;
+   margin-top: 52px;
+  }
+  #search{
+    margin-top: 44px;
+  }
+
+  #edit:hover{
+    cursor: pointer;
+  }
+  #trash{
+   color: red;
+   font-size:20px
+  }
+  #trash:hover{
+cursor: pointer;
+  }

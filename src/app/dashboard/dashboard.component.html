@@ -1,0 +1,48 @@
+<mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #drawer class="sidenav mat-elevation-z2" fixedInViewport="true"
+          [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+          [mode]="(isHandset$ | async) ? 'over' : 'side'"
+          [opened]="(isHandset$ | async) ==false">
+      
+          <mat-toolbar color="primary" class="sidenav-toolbar">
+            <div>
+             
+              <!-- <h6 class="default-h6">user_group</h6> -->
+            </div>
+          </mat-toolbar>
+          
+          <mat-nav-list class="margin-top-20">
+              <a mat-list-item routerLink="/home" class="item" ><mat-icon class="side-nav-icon ml-3 pr-5"></mat-icon> Home</a>
+      
+              <a mat-list-item routerLink="/administrator/university" class="item"><i class="fa fa-university"></i> Universities</a>
+      
+              <a mat-list-item routerLink="/administrator/programs" class="item" ><i class="fa fa-diploma"></i> Universities/program</a>
+      
+              <a mat-list-item routerLink="/administrator/facults" class="item"> Universities/facults</a>
+      
+              <a mat-list-item routerLink="/administrator/departements" class="item" >Universities/departements</a>
+      
+              <a mat-list-item routerLink="/administrator/secondary" class="item" >Secondaries</a>
+              <a mat-list-item routerLink="/administrator/setting" class="item" >  <i class="fa fa-cog"></i>Settings</a>
+              <a mat-list-item routerLink="/home" class="item" ><mat-icon  class="nav-icon mat-icon notranslate material-icons mat-icon-no-color" role="img" aria-hidden="true">exit_to_app</mat-icon>Logout</a>
+          </mat-nav-list>
+      
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <mat-toolbar color="primary" class="mat-elevation-z5" style="z-index: 999;">
+            <button type="button" fxHide.lg="true" fxShow.xs="true" aria-label="Toggle sidenav" mat-icon-button  (click)="drawer.toggle()">
+                <mat-icon aria-label="Side nav toggle icon" >menu</mat-icon>
+            </button>
+           
+          </mat-toolbar>
+      
+          
+          <div >
+              <router-outlet></router-outlet>
+            </div>
+        
+      
+        <!-- Add Content Here -->
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+      

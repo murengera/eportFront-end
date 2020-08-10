@@ -1,0 +1,15 @@
+#register{
+    width: 398px;
+    color: #22314f;
+    opacity: 1;
+    text-align: center;
+    margin-left: -113px;
+    height: 26px;
+   
+   
+}
+
+mat-list-item:hover{
+    cursor: pointer;
+  
+    }

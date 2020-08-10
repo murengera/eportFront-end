@@ -1,0 +1,33 @@
+
+ mat-toolbar {
+    
+    height: 30px;
+    max-width: 100%;
+  
+   
+   
+}
+    .moves >mat-list-item>a{
+        color: white;
+        font-size: 10px
+    }
+    
+    .moves{
+        margin-top: -10px;
+        margin-left: 956px;
+    }
+    .social{
+        margin-top: 100px
+    }
+     a#face{
+     
+        color: white;
+        margin-left: -1245px;
+        margin-top: 3px;
+        font-size: 12px;
+       
+    }
+
+ .link:hover{
+     color: red
+ }

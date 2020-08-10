@@ -1,0 +1,22 @@
+
+
+
+
+  .example-card {
+    max-width: 1000px;
+    height: 200px;
+    margin-right: 101px;
+ 
+   
+  }
+  
+  
+  .example-card:hover{
+  
+    box-shadow:0px 2px 5px 0.1px rgba(33, 49, 79, 1);
+  } 
+
+  .example-stretched-tabs {
+    max-width: 500px;
+  }
+  

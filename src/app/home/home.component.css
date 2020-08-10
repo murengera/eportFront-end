@@ -1,0 +1,207 @@
+body{
+    height: 200%;
+}
+
+
+.border{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.border:hover{
+    
+    box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
+}
+
+
+.child{
+   
+    height: 273px;
+    width: 500px;
+    box-shadow: 0px 2px 3px 1px black;
+}
+
+.online{
+    background-color: #498aa4;
+    
+    height: 100px;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    
+}
+.online:hover{
+    color: rgba(33, 49, 79, 1);
+    cursor: pointer;
+    color: white;
+}
+
+.cousers{
+margin-top: 10%
+}
+
+.learn{
+    border: 1px solid white;
+    width: 102px;
+    text-align: center;
+    margin-top: 23px;
+    height: 29px;
+    color: white;
+    border-radius: 8px;
+    background-color: #498aa4;
+    
+}
+
+.learn:hover{
+    cursor: pointer;
+   
+
+}
+.borderlearn{
+    border: 1px solid red
+}
+
+  
+.example-form{
+    border: 1px solid red;
+
+}
+#allinput{
+    margin-right: -9px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+    color: black;
+    width: 200px;
+    height: 33px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 5px 1px black;
+  
+}
+
+.all:hover{
+    box-shadow: 1px 3px 4px 2px;
+}
+.searchschool{
+    width: 88px;
+    height: 37px;
+    background-color: #22314f;
+    opacity: 0.8;
+    color: white;
+    border-radius: 7px;
+    margin-left: -15px;
+
+}
+
+.searchschool:hover{
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+.allsearch{
+    padding-left: 20px;
+    padding-right: 40px;
+    background: #f2f4f5;
+}
+
+
+.card{
+   
+    height: 20%;
+    margin-right: 115px;
+}
+
+.example-card {
+    max-width: 900px;
+   max-height: 20%;
+   margin-bottom: 7%;
+ 
+  
+  }
+  .example-cards{
+    max-width: 900px;
+    max-height: 20%;
+    margin-bottom: 7%; 
+  }
+  
+  .example-card:hover{
+    /* box-shadow:0px 2px 5px 0.1px rgba(33, 49, 79, 1);*/
+    border: 10px solid rgba(119, 108, 10, 0.788,0.5)
+   
+  }
+  
+
+  mat-card-title>a:hover{
+      cursor: pointer;
+      color: red;
+      opacity: 0.6;
+  }
+  p>i{
+        color: #ffc80a;
+  }
+
+  
+  .courseandscholarship{
+    border: 1px solid #e5ebec;
+    margin-top:40%;
+    height: 30.5%;
+    width: 200px;
+  
+
+  }
+.courser{
+ 
+}
+.courser:hover{
+cursor: pointer;
+color: rebeccapurple
+}
+  
+  #viewMore{
+   
+    text-align: center;
+    margin-right: 13px;
+    margin-top: -74px;
+    width: 191px;
+    font-size: 28px;
+    height: 45px;
+    font-family: serif;
+    font-style: italic;
+    background-color: lightblue;
+    color: white;
+    
+  }
+  #viewMore:hover{
+      cursor: pointer;
+      box-shadow: 3px 2px 12px 0px black;
+      opacity: 0.6;
+ 
+  }
+
+  .morebutton {
+    width: 139px;
+    height: 57px;
+    font-size: 22px;
+    font-family: serif;
+    font-style: italic;
+    margin-top: 21px;
+    background-color: #498aa4;
+    color: white;
+    border-radius: 14px;
+  }
+  .morebutton:hover{
+    box-shadow: 0px 2px 6px -2px #071d38;
+    cursor: pointer;
+      
+  }
+  .scholarship{
+
+  }
+  .scholarship:hover{
+      cursor: pointer;
+      color: blue;
+   
+  }

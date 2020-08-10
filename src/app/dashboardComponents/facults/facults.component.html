@@ -1,0 +1,69 @@
+
+
+<div fxLayout="column" fxLayout.xs="column"><!--div contain all div-->
+  <div fxLayoutAlign="center"><!--div contain input filter-->
+
+<mat-form-field>
+  <input (keyup)="applyFilter($event.target.value)"  matInput placeholder="Search">
+</mat-form-field>
+
+  </div><!-- end of div contain input filter-->
+
+  
+  <div fxLayoutAlign="center" fxLayoutAlign.xs="center"><!--div contain table-->
+
+
+    <table mat-table [dataSource]="dataSource.results" matSort class="mat-elevation-z8" style="width: 80%">
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+            <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+              <th mat-sort-header   mat-header-cell *matHeaderCellDef> <span>{{column | uppercase}}</span>
+              </th>
+              
+               
+                  <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+               
+             
+             
+                <!---->
+  
+        
+           
+            </ng-container>
+          
+  
+      <!-- Name Column -->
+      
+    
+     
+    
+      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      <tr mat-row  (click)="logData(row)" *matRowDef="let row; columns: columnsToDisplay;"></tr>
+    </table>
+  </div><!-- end div contain table-->
+
+  <div fxLayoutAlign="center" fxLayoutAlign.xs="center" style="margin-top: 3%"><!--div contain pagination-->
+    <mat-paginator [pageSizeOptions]="[2,10,20]" showFirstLastButtons></mat-paginator>
+
+  </div><!--end of div contain pagination-->
+</div> <!-- end of div contain all div-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
